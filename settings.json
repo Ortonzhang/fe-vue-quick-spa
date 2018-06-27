@@ -1,0 +1,39 @@
+{
+    "project": "fe-quick-h5-spa",
+    "deploy": {
+        "qa": {
+            "servers": [
+                {
+                    "host": "192.168.49.147",
+                    "username": "root"
+                }
+            ],
+            "targetDist": "dist/fe-quick-h5-spa",
+            "testServerDirectory": [
+                {
+                    "name": "default",
+                    "dir": "/opt/soft/tengine/html/mljr/",
+                    "pathname": "/fe-quick-h5-spa"
+                },
+                {
+                    "name": "backup",
+                    "dir": "/opt/soft/tengine/html/mljr/backup/",
+                    "pathname": "/backup/fe-quick-h5-spa"
+                }
+            ],
+            "buildIndex": "../dist/fe-quick-h5-spa/index.html",
+            "assetsRoot": "../dist/fe-quick-h5-spa",
+            "assetsSubDirectory": "static",
+            "assetsPublicPath": "./"
+        },
+        "www": {
+            "targetDist": "dist__www/fe-quick-h5-spa",
+            "feReleaseDist": "../fe-release-group",
+            "releaseGit": "git@github.com:Ortonzhang/fe-vue-quick-spa.git",
+            "buildIndex": "../dist__www/fe-quick-h5-spa/index.html",
+            "assetsRoot": "../dist__www/fe-quick-h5-spa",
+            "assetsSubDirectory": "static",
+            "assetsPublicPath": "//s1.mljr.com/fe-quick-h5-spa/"
+        }
+    }
+}
